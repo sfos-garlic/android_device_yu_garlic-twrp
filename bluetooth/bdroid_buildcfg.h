@@ -27,5 +27,6 @@
 #define MAX_L2CAP_CHANNELS    16
 #define BLE_VND_INCLUDED   TRUE
 // skips conn update at conn completion
-#define BT_CLEAN_TURN_ON_DISABLED 1
+#define BLE_PERIPHERAL_DISPLAYONLY  TRUE
+#define BLE_PERIPHERAL_ADV_NAME  TRUE
 #endif
