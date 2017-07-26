@@ -26,16 +26,16 @@ $(call inherit-product, device/tinno/msm8937-common/msm8937.mk)
 
 # Audio
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/mixer_paths_mtp.xml:system/etc/mixer_paths_mtp.xml \
-    $(LOCAL_PATH)/configs/audio_platform_info.xml:system/etc/audio_platform_info.xml
+    $(LOCAL_PATH)/configs/mixer_paths_mtp.xml:$(TARGET_OUT_VENDOR)/etc/mixer_paths_mtp.xml \
+    $(LOCAL_PATH)/configs/audio_platform_info.xml:$(TARGET_OUT_VENDOR)/etc/audio_platform_info.xml
 
 # Camera
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/camera/msm8937_camera_p7201.xml:system/etc/camera/msm8937_camera_c800.xml \
-    $(LOCAL_PATH)/configs/camera/imx258_guangbao_p7201_chromatix.xml:system/etc/camera/imx258_guangbao_p7201_chromatix.xml \
-    $(LOCAL_PATH)/configs/camera/imx258_sunny_p7201_chromatix.xml:system/etc/camera/imx258_sunny_p7201_chromatix.xml \
-    $(LOCAL_PATH)/configs/camera/ov8856_chromatix.xml:system/etc/camera/ov8856_chromatix.xml \
-    $(LOCAL_PATH)/configs/camera/p7201_s5k4h8_chromatix.xml:system/etc/camera/p7201_s5k4h8_chromatix.xml
+    $(LOCAL_PATH)/configs/camera/msm8937_camera_p7201.xml:$(TARGET_OUT_VENDOR)/etc/camera/msm8937_camera_c800.xml \
+    $(LOCAL_PATH)/configs/camera/imx258_guangbao_p7201_chromatix.xml:$(TARGET_OUT_VENDOR)/etc/camera/imx258_guangbao_p7201_chromatix.xml \
+    $(LOCAL_PATH)/configs/camera/imx258_sunny_p7201_chromatix.xml:$(TARGET_OUT_VENDOR)/etc/camera/imx258_sunny_p7201_chromatix.xml \
+    $(LOCAL_PATH)/configs/camera/ov8856_chromatix.xml:$(TARGET_OUT_VENDOR)/etc/camera/ov8856_chromatix.xml \
+    $(LOCAL_PATH)/configs/camera/p7201_s5k4h8_chromatix.xml:$(TARGET_OUT_VENDOR)/etc/camera/p7201_s5k4h8_chromatix.xml
 
 # FSTAB
 PRODUCT_PACKAGES += \
@@ -49,8 +49,8 @@ PRODUCT_COPY_FILES += \
 
 # Media
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
-    $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml
+    $(LOCAL_PATH)/configs/media_codecs_performance.xml:$(TARGET_OUT_VENDOR)/etc/media_codecs_performance.xml \
+    $(LOCAL_PATH)/configs/media_profiles.xml:$(TARGET_OUT_VENDOR)/etc/media_profiles.xml
 
 # Sensors
 PRODUCT_COPY_FILES += \
