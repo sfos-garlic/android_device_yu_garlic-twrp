@@ -36,6 +36,8 @@ on init
     chown system drmrpc /dev/qseecom
     chown system system /dev/ion
 
+    setprop ro.board.platform msm8937
+
 on property:ro.crypto.state=encrypted
     start sbinqseecomd
 
