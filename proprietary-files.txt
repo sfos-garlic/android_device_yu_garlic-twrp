@@ -1,12 +1,3 @@
-# Audio ACDB - from U-FEEL-PRIME-V01.31.OPE.20-[Nougat-7.1]-P7201AN
-etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb|44e23d8390d2276eb7e31810b296c7fa9c510cb6
-etc/acdbdata/MTP/MTP_General_cal.acdb|3d18d7521ddd85740eddc9c1c4468981e50cec53
-etc/acdbdata/MTP/MTP_Global_cal.acdb|7fd8e39e289bb4b38842cc68c6e1ac950d28e4ec
-etc/acdbdata/MTP/MTP_Handset_cal.acdb|ef5c8ab313adac94241003094652a54547da0997
-etc/acdbdata/MTP/MTP_Hdmi_cal.acdb|d85c0dd85aede468ce9f33e34d97ec562e717f6f
-etc/acdbdata/MTP/MTP_Headset_cal.acdb|00687b38e53de32ac3ba670bdd5664f269efe9d3
-etc/acdbdata/MTP/MTP_Speaker_cal.acdb|898c35ebba4d2d7536260a61067edffd8681bfa1
-
 # Camera - from U-FEEL-PRIME-V01.31.OPE.20-[Nougat-7.1]-P7201AN
 vendor/lib/libmmcamera_imx258_guangbao_p7201.so|3c04d928e2fa3d873ab3657854f8ea9d442dcd3c
 vendor/lib/libmmcamera_imx258_sunny_p7201.so|12e6814864e24eefd3320861ccf0581fe0b4f070
