@@ -31,11 +31,11 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/camera/msm8937_camera_p7201.xml:$(TARGET_OUT_VENDOR)/etc/camera/msm8937_camera_c800.xml \
-    $(LOCAL_PATH)/configs/camera/imx258_guangbao_p7201_chromatix.xml:$(TARGET_OUT_VENDOR)/etc/camera/imx258_guangbao_p7201_chromatix.xml \
-    $(LOCAL_PATH)/configs/camera/imx258_sunny_p7201_chromatix.xml:$(TARGET_OUT_VENDOR)/etc/camera/imx258_sunny_p7201_chromatix.xml \
-    $(LOCAL_PATH)/configs/camera/ov8856_chromatix.xml:$(TARGET_OUT_VENDOR)/etc/camera/ov8856_chromatix.xml \
-    $(LOCAL_PATH)/configs/camera/p7201_s5k4h8_chromatix.xml:$(TARGET_OUT_VENDOR)/etc/camera/p7201_s5k4h8_chromatix.xml
+    $(LOCAL_PATH)/configs/camera/msm8937_camera_p7201.xml:system/etc/camera/msm8937_camera_c800.xml \
+    $(LOCAL_PATH)/configs/camera/imx258_guangbao_p7201_chromatix.xml:system/etc/camera/imx258_guangbao_p7201_chromatix.xml \
+    $(LOCAL_PATH)/configs/camera/imx258_sunny_p7201_chromatix.xml:system/etc/camera/imx258_sunny_p7201_chromatix.xml \
+    $(LOCAL_PATH)/configs/camera/ov8856_chromatix.xml:system/etc/camera/ov8856_chromatix.xml \
+    $(LOCAL_PATH)/configs/camera/p7201_s5k4h8_chromatix.xml:system/etc/camera/p7201_s5k4h8_chromatix.xml
 
 # FSTAB
 PRODUCT_PACKAGES += \
@@ -56,4 +56,3 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     $(LOCAL_PATH)/configs/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf
-
