@@ -1,5 +1,5 @@
 /system          ext4              /dev/block/bootdevice/by-name/system
-/data            ext4              /dev/block/bootdevice/by-name/userdata           flags=display="data";backup=1
+/data            ext4              /dev/block/bootdevice/by-name/userdata           flags=display="data";backup=1;encryptable=footer
 /cache           ext4              /dev/block/bootdevice/by-name/cache
 /persist         ext4              /dev/block/bootdevice/by-name/persist            flags=backup=1;display="Persist"
 /boot            emmc              /dev/block/bootdevice/by-name/boot
@@ -7,3 +7,4 @@
 /frp             emmc              /dev/block/bootdevice/by-name/config             flags=backup=0
 /external_sd     vfat              /dev/block/mmcblk1p1 /dev/block/mmcblk1          flags=display="Micro SDcard";storage;wipeingui;removable
 /usb-otg         vfat              /dev/block/sda1      /dev/block/sda              flags=removable;storage;display=USB-OTG
+/misc		 emmc		   /dev/block/bootdevice/by-name/misc
