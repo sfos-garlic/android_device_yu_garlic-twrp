@@ -106,3 +106,31 @@ TW_INCLUDE_FUSE_EXFAT := true
 
 # NTFS Support
 TW_INCLUDE_FUSE_NTFS := true
+
+#MultiROM config. MultiROM also uses parts of TWRP config
+MR_DEVICE_HOOKS := $(DEVICE_PATH)/multirom/mr_hooks.c
+MR_DEVICE_HOOKS_VER := 6
+MR_DEVICE_BOOTDEVICE := /dev/block/platform/soc/7824900.sdhci
+MR_DPI := xhdpi
+MR_DPI_FONT := 340
+MR_ENCRYPTION := true
+MR_ENCRYPTION_FAKE_PROPERTIES := true
+MR_ENCRYPTION_FAKE_PROPERTIES_EXTRAS := $(DEVICE_PATH)/multirom/mr_fake_properties.c
+MR_ENCRYPTION_SETUP_SCRIPT := $(DEVICE_PATH)/multirom/mr_cp_crypto.sh
+MR_FSTAB := $(DEVICE_PATH)/recovery/root/etc/twrp.fstab
+MR_INIT_DEVICES := $(DEVICE_PATH)/multirom/mr_init_devices.c
+MR_INPUT_TYPE := type_b
+MR_KEXEC_MEM_MIN := 0x84A00000
+MR_NO_KEXEC := enabled
+MR_PIXEL_FORMAT := "RGBA_8888"
+MR_UNIFIED_TABS := true
+MR_USE_MROM_FSTAB := true
+MR_EXTRA_FIRMWARE_DIR := "/mrom_enc/vendor/firmware"
+MR_FIRMWARE_DIR := "/vendor/firmware_mnt"
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
+DEVICE_RESOLUTION := 1080x1920
+TARGET_RECOVERY_IS_MULTIROM := true
+MR_DEVICE_HAS_VENDOR_PARTITION := true
+#MR_DEVICE_HAS_DRM_GRAPHICS := true
+MR_CONTINUOUS_FB_UPDATE := true
+#MR_CUSTOM_FORBIDDEN_PARTITIONS := $(DEVICE_PATH)/multirom/mr_forbidden_partitions.cpp
