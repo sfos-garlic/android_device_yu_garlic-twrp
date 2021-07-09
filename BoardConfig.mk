@@ -4,6 +4,10 @@ LOCAL_PATH := device/yu/garlic
 TARGET_BOARD_PLATFORM := msm8937
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno505
 
+# Build
+BUILD_BROKEN_USES_BUILD_HOST_EXECUTABLE := true
+BUILD_BROKEN_DUP_RULES := true  # Allow duplicate rules to override them
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
@@ -36,7 +40,8 @@ BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET := 0x01000000
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/Image.gz-dtb
+TARGET_KERNEL_SOURCE := kernel/tinno/msm8937
+TARGET_KERNEL_CLANG_COMPILE := false
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
@@ -108,17 +113,17 @@ TW_INCLUDE_FUSE_EXFAT := true
 TW_INCLUDE_FUSE_NTFS := true
 
 #MultiROM config. MultiROM also uses parts of TWRP config
-MR_DEVICE_HOOKS := $(DEVICE_PATH)/multirom/mr_hooks.c
+MR_DEVICE_HOOKS := $(LOCAL_PATH)/multirom/mr_hooks.c
 MR_DEVICE_HOOKS_VER := 6
 MR_DEVICE_BOOTDEVICE := /dev/block/platform/soc/7824900.sdhci
 MR_DPI := xhdpi
 MR_DPI_FONT := 340
 MR_ENCRYPTION := true
 MR_ENCRYPTION_FAKE_PROPERTIES := true
-MR_ENCRYPTION_FAKE_PROPERTIES_EXTRAS := $(DEVICE_PATH)/multirom/mr_fake_properties.c
-MR_ENCRYPTION_SETUP_SCRIPT := $(DEVICE_PATH)/multirom/mr_cp_crypto.sh
-MR_FSTAB := $(DEVICE_PATH)/recovery/root/etc/twrp.fstab
-MR_INIT_DEVICES := $(DEVICE_PATH)/multirom/mr_init_devices.c
+MR_ENCRYPTION_FAKE_PROPERTIES_EXTRAS := $(LOCAL_PATH)/multirom/mr_fake_properties.c
+MR_ENCRYPTION_SETUP_SCRIPT := $(LOCAL_PATH)/multirom/mr_cp_crypto.sh
+MR_FSTAB := $(LOCAL_PATH)/recovery/root/etc/twrp.fstab
+MR_INIT_DEVICES := $(LOCAL_PATH)/multirom/mr_init_devices.c
 MR_INPUT_TYPE := type_b
 MR_KEXEC_MEM_MIN := 0x84A00000
 MR_NO_KEXEC := enabled
