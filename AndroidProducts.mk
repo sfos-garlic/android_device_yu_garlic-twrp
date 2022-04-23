@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_garlic.mk
+    $(LOCAL_DIR)/twrp_garlic.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_garlic-eng \
-    omni_garlic-user \
-    omni_garlic-userdebug
+    twrp_garlic-eng \
+    twrp_garlic-user \
+    twrp_garlic-userdebug
